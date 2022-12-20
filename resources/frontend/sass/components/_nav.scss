@@ -1,0 +1,79 @@
+.navbar-default {
+	background-color:  $white;
+	border-color:  $white;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	transition: all .3s ease;
+
+	@media (min-width: $device-xs) {
+		background-color:  transparent;
+		border-color:  transparent;
+	}
+
+	.navbar-nav {
+
+		> .open > a {
+		&,
+		&:hover,
+			&:focus {
+				background-color: transparent;
+				// color: $navbar-default-link-active-color;
+			}
+		}
+
+		li {
+			a {
+				font-weight: 500;
+				color: $black;
+
+				&:hover {
+					color: $gray;
+				}
+			}
+
+			.dropdown-menu {
+				padding: 0px;
+				box-shadow: 0 7px 27px 0 rgba(16,66,97,.07);
+				border: 1px solid #e8e8e8;
+				border-radius: 0;
+
+				li {
+					a {
+						padding: 15px 15px;
+					}
+				}
+			}
+
+			.language-nav {
+				padding: 0;
+				width: 60px;
+				min-width: 60px;
+				border-radius: 0;
+
+				li {
+					a {
+						&.active {
+							background: $orange-light;
+						}
+						padding: 15px 15px;
+					}
+				}
+			}
+		}
+	}
+
+	a.navbar-brand {
+		font-weight: 900;
+		color: $text;
+		font-size: 3rem;
+		margin-right: 100px;
+	}
+
+	&.sticky {
+		background: $white;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		box-shadow: 0 7px 27px 0 rgba(16,66,97,.07);
+	}
+}
+

@@ -1,0 +1,116 @@
+body {
+	background: $white;
+	font-family: $poppins;
+	color: $text;
+
+	&.access-denied {
+		background: #152633;
+		margin-top: 15%;
+
+		h1 {
+			font-size: 3rem;
+			font-weight: 900;
+			color: $white;
+			margin-bottom: 30px;
+
+			@media (min-width: $device-xs) {
+				font-size: 5rem;
+			}
+		}
+
+		a {
+			color: $orange;
+			position: relative;
+
+			&:after {
+				position: absolute;
+				font-family: FontAwesome;
+			   	content: "\f101";
+			   	display: inline-block;
+			   	top: 0px;
+    			right: -15px;
+    			@include transition (all .3s ease)
+			}
+
+			&:hover {
+				&:after {
+					right: -25px;
+				}
+			}
+		}
+	}
+}
+
+.img-center {
+	display: block;
+	margin: 0 auto;
+}
+
+a {
+	transition: all .3s ease;
+	
+	&:hover {
+		text-decoration: none;
+		color: $white;
+	}
+}
+
+.hide-xs {
+	display: none;
+	@media (min-width: $device-sm) {
+		display: block;
+	}
+}
+
+.row-no-padding > [class*="col-"] {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.btn-center {
+	display: table;
+	margin: 0 auto;
+}
+
+.white-text {
+	color: $white;
+}
+
+.gray-text {
+	color: #bdbdbd;
+}
+
+.p-big {
+	font-size: 1.6rem;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.space {
+	display: block;
+	clear: both;
+
+	&.s1 {
+		height: 10px;
+	}
+
+	&.s2 {
+		height: 20px;
+	}
+
+	&.s3 {
+		height: 30px;
+	}
+
+	&.s4 {
+		height: 40px;
+	}
+}
+
+.line-horizontal {
+	border-right: 0px solid #e6e6e6;
+
+	@media (min-width: $device-xs) {
+		border-right: 1px solid #e6e6e6;
+	}
+}

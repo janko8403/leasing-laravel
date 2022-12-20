@@ -1,0 +1,111 @@
+
+.login-bg {
+	background-color: $fiolet;
+}
+
+.logo-header {
+	background: url(../images/login-bg.png) no-repeat;
+	background-size: cover;
+	height: 100vh;
+
+	.login-logo {
+		font-weight: 900;
+		color: #c7c7c7;
+		font-size: 2.5rem;
+		margin-left: 40px;
+		margin-top: 30px;
+	}
+}
+
+.login-form {
+	margin: 50px 30px 0 30px;
+	padding: 0;
+
+	@media (min-width: $device-xxs) {
+		margin: 80px 100px 0 100px;
+		padding: 0 100px;
+	}
+
+	// @media (min-width: $device-md) {
+	// 	margin: 150px 80px 0 80px;
+	// 	padding: 0 100px;
+	// }
+
+	&.register-form {
+		margin: 50px 30px 0 30px;
+
+		@media (min-width: $device-xxs) {
+			margin: 50px 100px 0 100px;
+		}
+	}
+
+	.title {
+		font-weight: 900;
+    	font-size: 2rem;
+    	color: $text;
+    	margin-bottom: 10px;
+	}
+
+	p {
+		font-size: 1.6rem;
+		font-weight: 300;
+		margin-bottom: 30px;
+
+		&.register-fb {
+			font-size: 1.3rem;
+			font-weight: 300;
+			color: $black;
+		}
+	}
+
+	.form-control {
+		border: 0;
+    	background-color: #F7F7F7;
+    	color: #000;
+	}
+
+	.btn-login {
+		border-radius: 3px;
+		padding: 0.7rem 2rem;
+		font-size: 1.4rem;
+		margin-top: 1rem;
+		border: 0;
+		transition: all .3s ease;
+		background: $orange;
+		color: $white;
+		margin-right: 30px;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	a {
+		font-size: 1.3rem;
+		font-weight: 500;
+		color: $black;
+
+		&.fb-link {
+			color: #3c5b9b;
+			font-weight: 700;
+		}
+
+		&:hover {
+			text-decoration: none;
+			color: $black;
+		}
+	}
+}
+
+
+.register {
+	text-align: right;
+	padding-right: 15px;
+	padding-top: 15px;
+	font-size: 1.4rem;
+	font-weight: 400;
+
+	a {
+		color: $orange;
+	}
+}

@@ -1,0 +1,69 @@
+footer {
+	background: $black;
+	padding: 40px 0 30px;
+	color: $white;
+
+	p {
+		color: $text-gray;
+		font-weight: 200;
+		font-size: 1.4rem;
+		text-align: center;
+
+		@media (min-width: $device-xs) {
+			text-align: left;
+		}
+	}
+
+	.social {
+		float: none;
+		text-align: center;
+
+		@media (min-width: $device-xs) {
+			float: right;
+		}
+
+		a {
+			padding: 0 5px;
+			color: $text-gray;
+			font-weight: 200;
+			font-size: 1.4rem;
+
+			&:hover {
+				color: $white;
+			}
+		}
+	}
+
+}
+
+.brand-footer {
+	color: $white;
+	font-weight: 900;
+	font-size: 3rem;
+
+	&:hover, &:focus {
+		color: $white;
+		text-decoration: none;
+	}
+}
+
+ul {
+	&.nav-footer {
+		list-style: none;
+		padding-inline-start: 0;
+		color: $text-gray;
+		font-weight: 300;
+
+		li {
+			padding: 4px 0;
+			a {
+				color: $text-gray;
+
+				&:hover {
+					text-decoration: none;
+					color: $white;
+				}
+			}
+		}
+	}
+}

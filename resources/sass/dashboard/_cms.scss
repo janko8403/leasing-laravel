@@ -1,0 +1,38 @@
+.ml15 {
+	margin-left: 15px;
+}
+
+.mt20 {
+	margin-top: 20px;
+}
+
+.active-gray {
+	background: #cecece;
+	opacity: .3;
+}
+
+.opacity-icons {
+	// opacity: .3;
+}
+
+.remove-cursor {
+	cursor: not-allowed !important;
+}
+
+.spacer {
+    position: relative;
+    display: block;
+
+    &.s1 {
+        height: 1rem;
+    }
+    &.s2 {
+        height: 2rem;
+    }
+    &.s3 {
+        height: 3rem;
+    }
+    &.s4 {
+        height: 4rem;
+    }
+}

@@ -1,0 +1,36 @@
+.button {
+	border-radius: 3px;
+	padding: 1.5rem 3rem;
+	font-size: 1.6rem;
+	margin-top: 1rem;
+	border: 0;
+	transition: all .3s ease;
+
+	&:hover {
+		text-decoration: none;
+	}
+
+	&.orange {
+		background: $orange;
+		color: $white;
+
+		&:hover {
+			text-decoration: none;
+			background: $orange-light;
+		}
+	}
+
+	&.width-full {
+		width: 100%;
+	} 
+
+	&.small-btn {
+		padding: 1rem 2rem;
+		font-size: 1.4rem;
+	}
+
+	&.right {
+		float: right;
+	}
+
+}

@@ -1,0 +1,214 @@
+.box-car {
+	margin-bottom: 2rem;
+	border: 1px solid #e6e6e6;
+	min-height: 100px;
+
+	.img-car {
+
+		img {
+			width: 100%;
+		}
+
+		.title-car {
+			margin-top: 15px;
+			margin-left: 15px;
+			font-size: 2.5rem;
+		    font-weight: 600;
+		}
+	}
+
+	ul {
+		margin-top: 100px;
+	}
+
+	.car-header	{
+		margin-top: 150px;
+		padding-right: 20px;
+
+		.price {
+			margin-top: 5px;
+			font-size: 3.2rem;
+		    font-weight: 600;
+		    text-align: right;
+		    line-height: 2rem;
+		    margin-bottom: 10px;
+
+		    span {
+		    	font-size: 1.8rem;
+		    	font-weight: 400;
+		    }
+		}
+
+		.count-car {
+			font-size: 1.4rem;
+		    font-weight: 600;
+		    color: $text-gray;
+		}
+
+		label {
+			float: right;
+		}
+
+		.check-btn {
+			cursor: pointer;
+		}
+
+		.title-total {
+			margin-top: 5px;
+			font-size: 3rem;
+		    font-weight: 300;
+		    text-align: right;
+		    line-height: 2rem;
+		    margin-bottom: 20px;
+		}
+
+		.price-total {
+			margin-top: 25px;
+			font-size: 4rem;
+		    font-weight: 600;
+		    text-align: right;
+		    line-height: 2rem;
+		    margin-bottom: 10px;
+
+		    span {
+		    	font-size: 2.5rem;
+		    	font-weight: 400;
+		    }
+		}
+
+	}
+
+}
+
+.step-login {
+	font-size: 1.5rem;
+	font-weight: 300;
+
+	a {
+
+		&:hover {
+			color: $orange;
+		}
+	}
+}
+
+.car {
+	position: relative;
+
+	.price-per-day {
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 2.5rem;
+		font-weight: 700;
+
+		span {
+			font-size: 1.7rem;
+			font-weight: 300;
+		}
+	}
+}
+
+table {
+	&.table-cars {
+		thead {
+			background: $orange;
+			color: $white;
+		}
+		tr > td {
+			padding: 15px 20px;
+		}
+	}
+}
+
+
+ul {
+	&.category-car {
+		padding-left: 0;
+		text-align: center;
+		list-style-type: none;
+		margin: 0 auto;
+
+		li {
+			display: inline-block;
+
+			a {
+				background: $orange;
+				padding: 10px 20px;
+				border-radius: 0;
+				color: $white;
+				min-width: 120px;
+			}
+		}
+	}
+}
+
+h1 {
+	&.h1-reservation {
+		margin-top: 40px;
+		font-size: 4rem;
+		font-weight: 300;
+	}
+}
+
+table {
+	&.table-reservation {
+		margin-top: 30px;
+		margin-bottom: 20px;
+		width: 100%;
+		tr {
+			border-bottom: 1px solid $text-gray;
+			td {
+				padding: 25px 0;
+				text-align: left;
+				font-size: 3rem;
+				font-weight: 300;
+
+				&.price {
+					text-align: right;
+				}
+			}
+		}
+	}
+}
+
+.box-car-fleet {
+	margin-bottom: 2rem;
+	@include shift(all, .3s, ease);
+
+	&:hover {
+		.img-car {
+			box-shadow: 0 0 15px rgba(0,0,0,.1);
+
+			img {
+				transition: scale(1.2);
+			} 
+			@include shift(all, .3s, ease);
+		}
+
+		@include shift(all, .3s, ease);
+	} 
+
+	.img-car {
+		@include shift(all, .3s, ease);
+		border: 1px solid #e6e6e6;
+		img {
+			width: 100%;
+		}
+	}
+
+	.car-header	{
+		a {
+			margin-top: 15px;
+			font-size: 2rem;
+		    font-weight: 600;
+		    color: $gray;
+		    @include shift(all, .3s, ease);
+
+		    &:hover {
+		    	@include shift(all, .3s, ease);
+		    	color: $orange;
+		    }
+		}
+	}
+}

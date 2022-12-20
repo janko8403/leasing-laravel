@@ -1,0 +1,68 @@
+header {
+	padding: 40px 0;
+	position: relative;
+	background-color: $bg;
+	
+	&.rest {
+		background: url(../images/header-rest.png) bottom right no-repeat $bg;
+		height: 40vh;
+		padding: 100px 0;
+	}
+
+	&.main {
+		width: 100%;
+		height: auto;
+		overflow: hidden;
+
+		&:before {
+			position: absolute;
+			content: "";
+			width: 900px;
+			height: 900px;
+			border-radius: 500px;
+			background-color: $orange-light;
+			top: -200px;
+			right: -200px;
+			display: none;
+
+			@media (min-width: $device-xs) {
+				display: block;
+			}
+		}
+	}
+
+	.car {
+		position: absolute;
+		top: 25vh;
+		right: 0px;
+		display: none;
+
+		@media (min-width: $device-xs) {
+			display: block;
+		}
+	}
+
+	h3 {
+	    font-weight: 900;
+	    font-size: 2.5rem;
+	    color: $text;
+	    margin-top: 40px;
+	}
+
+	.breadcrumb {
+	    padding: 8px 15px 8px 0;
+	    margin-bottom: 20px;
+	    list-style: none;
+	    background-color: transparent;
+	    border-radius: 4px;
+
+	    li {
+	    	a {
+	    		color: $text;
+	    		&:hover {
+	    			color: $text;
+	    		}
+	    	}
+	    }
+	}
+}

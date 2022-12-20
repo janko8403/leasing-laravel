@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl" class="no-js">
+
+	<head>
+		<meta charset="utf-8">
+        <title>Gala Gwiazd Sprzedaży | event BNP</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- ================= Favicon ================== -->
+        <!-- Standard -->
+        <link rel="shortcut icon" href="img/favicon.png">
+        <!-- Retina iPad Touch Icon-->
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicon-retina-ipad.png">
+        <!-- Retina iPhone Touch Icon-->
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicon-retina-iphone.png">
+        <!-- Standard iPad Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicon-standard-ipad.png">
+        <!-- Standard iPhone Touch Icon--> 
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicon-standard-iphone.png">
+
+        <!-- ============== Resources style ============== -->
+        <link rel="stylesheet" href="css/style-minimal.css" />
+
+		<!-- Modernizr runs quickly on page load to detect features -->
+		<script src="js/modernizr.custom.js"></script>
+	</head>
+	
+	<body>
+
+		<!-- Overlay -->
+		<div class="global-overlay">
+			<div class="overlay skew-part"></div>
+		</div>
+
+		<!-- START - Home/Left Part -->
+		<section id="left-side" class="minimal-phone">
+
+			<!-- Your logo -->
+			<img src="img/logo.png" alt="" class="brand-logo" />
+
+			<div class="content">
+
+				<h1 class="text-intro opacity-0">Gala rozpocznie się za:
+					<div id="getting-started"></div>
+				</h1>
+
+				<h2 class="text-intro opacity-0">Coroczna konferencja dla pracowników sieci detalicznej<br>
+					i biznesowej, zwieńczona rozdaniem nagród za najlepsze wyniki.</h2>
+
+			</div>
+
+
+		</section>
+		<!-- END - Home/Left Part -->
+
+
+
+
+	<!-- ///////////////////\\\\\\\\\\\\\\\\\\\ -->
+    <!-- ********** Resources jQuery ********** -->
+    <!-- \\\\\\\\\\\\\\\\\\\/////////////////// -->
+	
+	<!-- * Libraries jQuery, Easing and Bootstrap - Be careful to not remove them * -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.easings.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+	<!-- Accelerated JavaScript animation JS file -->
+	<script src="js/velocity.min.js"></script> 
+
+	<!-- Accelerated JavaScript animation UI JS file -->
+	<script src="js/velocity.ui.min.js"></script>  
+
+	<!-- Newsletter plugin -->
+	<script src="js/notifyMe.js"></script>
+
+	<!-- Slideshow/Image plugin -->
+	<script src="js/vegas.js"></script>
+
+	<!-- Scroll plugin -->
+	<script src="js/jquery.mousewheel.js"></script>
+
+	<!-- Custom Scrollbar plugin -->
+	<script src="js/jquery.mCustomScrollbar.js"></script>
+
+	<!-- Popup Newsletter Form -->
+	<script src="js/classie.js"></script>
+	<script src="js/dialogFx.js"></script>
+
+	<!-- Countdown plugin -->
+	<script src="js/jquery.countdown.js"></script>
+
+	<script>
+	$("#getting-started")
+		// Year/Month/Day Hour:Minute:Second
+		.countdown("2020/06/25 15:00:00", function(event) {
+			$(this).text(
+				event.strftime('%Dd %Hh %Mm %Ss')
+			);
+	});
+	</script>
+
+	<!-- Main JS File -->
+	<script src="js/main.js"></script>
+	
+	<!--[if lt IE 10]><script type="text/javascript" src="js/placeholder.js"></script><![endif]-->
+
+	</body>
+
+</html>

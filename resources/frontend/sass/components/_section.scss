@@ -1,0 +1,16 @@
+section {
+	padding: 50px 0;
+
+	&.call-bg {
+		background-color: $orange;
+	}
+
+	&.gray-bg {
+		background-color: $bg;
+	}
+
+	&.footer-section {
+		background-color: $gray;
+		padding: 50px 0 40px;
+	}
+}
